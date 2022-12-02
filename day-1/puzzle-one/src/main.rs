@@ -14,5 +14,5 @@ fn main() {
         }
         
     }
-    println!("{:?}", calories_arr.iter().max());
+    println!("{}", calories_arr.iter().max().unwrap());
 }

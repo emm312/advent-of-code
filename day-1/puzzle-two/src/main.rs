@@ -1,4 +1,4 @@
-use std::fs;
+use std::{fs};
 
 fn main() {
     let content = fs::read_to_string("input.txt").expect("Puzzle input does not exist.");
@@ -16,5 +16,5 @@ fn main() {
     }
     calories_arr.sort();
     calories_arr.reverse();
-    println!("{:?}", calories_arr[0]+calories_arr[1]+calories_arr[2]);
+    println!("{}", calories_arr[0]+calories_arr[1]+calories_arr[2]);
 }
